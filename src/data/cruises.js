@@ -686,6 +686,115 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2024-asia",
+    name: "Asia 11-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Jewel",
+    departureDate: "2024-01-14",
+    returnDate: "2024-01-27",
+    color: "#1B5E20",
+    roundTrip: false,
+    seaDays: ["2024-01-18", "2024-01-21", "2024-01-23"],
+    ports: [
+      {
+        name: "Bangkok",
+        city: "Bangkok, Thailand",
+        lat: 13.7563,
+        lng: 100.5018,
+        type: "land",
+        date: "2024-01-15",
+        nights: 1,
+        notes: "Flew Atlanta → Doha (Jan 14) → Bangkok (Jan 15). Boarded ship on Jan 16 at Laem Chabang.",
+        images: "images/cruise-2024-asia/bangkok"
+      },
+      {
+        name: "Laem Chabang Cruise Terminal",
+        city: "Laem Chabang, Thailand (near Bangkok)",
+        lat: 13.0877,
+        lng: 100.8881,
+        homePort: true,
+        date: "2024-01-16",
+        notes: "Embarkation – boarded Jan 16, stayed on ship.",
+        images: "images/cruise-2024-asia/laem-chabang"
+      },
+      {
+        name: "Pattaya City",
+        city: "Pattaya, Thailand",
+        lat: 12.9236,
+        lng: 100.8825,
+        type: "excursion",
+        excludeFromRoute: true,
+        date: "2024-01-17",
+        notes: "Day 2 – Bus day trip from ship before sailing.",
+        images: "images/cruise-2024-asia/pattaya"
+      },
+      {
+        name: "Ho Chi Minh City Port",
+        city: "Ho Chi Minh City, Vietnam",
+        lat: 10.7769,
+        lng: 106.7009,
+        date: "2024-01-19",
+        notes: "Day 4 – Củ Chi Tunnels tour.",
+        images: "images/cruise-2024-asia/ho-chi-minh-city"
+      },
+      {
+        name: "Nha Trang Port",
+        city: "Nha Trang, Vietnam",
+        lat: 12.2388,
+        lng: 109.1967,
+        date: "2024-01-20",
+        notes: "Day 5 – Buddhist temple visit and boat ride on the Cai River.",
+        images: "images/cruise-2024-asia/nha-trang"
+      },
+      {
+        name: "Marina Bay Cruise Centre",
+        city: "Singapore",
+        lat: 1.2655,
+        lng: 103.8611,
+        date: "2024-01-22",
+        notes: "Day 7 – Hop-on, hop-off bus tour.",
+        images: "images/cruise-2024-asia/singapore"
+      },
+      {
+        name: "Phuket Cruise Terminal",
+        city: "Phuket, Thailand",
+        lat: 7.8804,
+        lng: 98.3923,
+        date: "2024-01-24",
+        notes: "Day 9 – Bus to the north for a river boat ride.",
+        images: "images/cruise-2024-asia/phuket"
+      },
+      {
+        name: "Penang Cruise Terminal",
+        city: "George Town, Penang, Malaysia",
+        lat: 5.4141,
+        lng: 100.3288,
+        date: "2024-01-25",
+        notes: "Day 10 – Penang Hill tour.",
+        images: "images/cruise-2024-asia/penang"
+      },
+      {
+        name: "Langkawi",
+        city: "Langkawi, Malaysia",
+        lat: 6.3500,
+        lng: 99.8000,
+        date: "2024-01-26",
+        notes: "Day 11 – Speed boat ride and bat cave tour.",
+        images: "images/cruise-2024-asia/langkawi"
+      },
+      {
+        name: "Port Klang",
+        city: "Kuala Lumpur (Port Klang), Malaysia",
+        lat: 3.0319,
+        lng: 101.3847,
+        type: "disembarkation",
+        date: "2024-01-27",
+        notes: "Day 12 – Disembarkation. Bus city tour of Kuala Lumpur. Flew home.",
+        images: "images/cruise-2024-asia/kuala-lumpur"
+      }
+    ]
+  },
+  {
     id: "cruise-2026-rhine",
     name: "Rhine River Cruise",
     cruiseLine: "Viking River Cruises",
