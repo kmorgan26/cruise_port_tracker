@@ -377,6 +377,28 @@ html, body {
   text-decoration: none;
 }
 
+/* ─── Photo button (popup) ─────────────────────────────────── */
+
+.popup-photos-btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.08);
+  color: var(--text-primary, #dde6f0);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s;
+}
+
+.popup-photos-btn:hover {
+  background: rgba(255,255,255,0.16);
+}
+
 /* ─── Responsive ─────────────────────────────────────────── */
 
 @media (max-width: 600px) {

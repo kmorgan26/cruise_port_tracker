@@ -150,6 +150,12 @@
         (port.notes ? '<div class="port-popup-notes">' + port.notes + "</div>" : "") +
         (isHomePort ? '<div class="port-popup-homeport-badge">⚓ Home Port</div>' : "") +
         (port.type === "missed" ? '<div class="port-popup-missed-badge">❌ Missed – weather</div>' : "") +
+        (function() {
+          var photos = (typeof PHOTO_MANIFEST !== 'undefined' && port.images && PHOTO_MANIFEST[port.images]) || [];
+          return photos.length > 0
+            ? '<button class="popup-photos-btn" data-images="' + port.images + '">📷 ' + photos.length + ' Photo' + (photos.length !== 1 ? 's' : '') + '</button>'
+            : '';
+        })() +
         "</div>";
 
       var marker = L.marker([port.lat, port.lng], {
@@ -278,6 +284,22 @@
         duration: 1.5,
       });
     }
+  });
+
+  // ─── Photo lightbox ──────────────────────────────────────────────────────────
+
+  map.on('popupopen', function(e) {
+    var btn = e.popup.getElement().querySelector('.popup-photos-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      var key = btn.dataset.images;
+      var files = (typeof PHOTO_MANIFEST !== 'undefined' && PHOTO_MANIFEST[key]) || [];
+      if (!files.length) return;
+      var elements = files.map(function(f) {
+        return { href: 'src/' + key + '/' + encodeURIComponent(f), type: 'image', title: f.replace(/\.[^.]+$/, '') };
+      });
+      GLightbox({ elements: elements, touchNavigation: true, loop: true, closeButton: true }).open();
+    });
   });
 
   // ─── Initial map view ────────────────────────────────────────────────────────
