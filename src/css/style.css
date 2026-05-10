@@ -19,7 +19,11 @@
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-html, body {
+html {
+  height: 100%;
+}
+
+body {
   height: 100%;
   overflow: hidden;
   font-family: var(--font);
@@ -82,7 +86,8 @@ html, body {
 }
 
 #btn-fit-all,
-#btn-toggle-all {
+#btn-toggle-all,
+#btn-collapse-all {
   width: 100%;
   padding: 7px 12px;
   background: var(--bg-card);
@@ -96,7 +101,8 @@ html, body {
 }
 
 #btn-fit-all:hover,
-#btn-toggle-all:hover {
+#btn-toggle-all:hover,
+#btn-collapse-all:hover {
   color: var(--text-primary);
   border-color: #2e4a6a;
 }
@@ -421,13 +427,17 @@ html, body {
 
 #splash {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 9999;
   background: var(--bg-app);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
+  overflow-y: auto;
   transition: opacity 0.6s ease;
 }
 
