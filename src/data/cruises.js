@@ -88,6 +88,176 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2015-caribbean",
+    name: "Western Caribbean 5-Night",
+    cruiseLine: "Carnival Cruise Line",
+    ship: "Carnival Paradise",
+    departureDate: "2015-04-27",
+    returnDate: "2015-05-02",
+    color: "#2E7D32",
+    seaDays: ["2015-04-28", "2015-05-01"],
+    ports: [
+      {
+        name: "Port Tampa Bay",
+        city: "Tampa, FL",
+        lat: 27.9316,
+        lng: -82.4525,
+        homePort: true,
+        date: "2015-04-27",
+        notes: "Departure – Day 1",
+        images: "images/cruise-2015-caribbean/tampa"
+      },
+      {
+        name: "George Town Cruise Terminal",
+        city: "Grand Cayman, Cayman Islands",
+        lat: 19.2869,
+        lng: -81.3674,
+        date: "2015-04-29",
+        notes: "Day 3 – In port",
+        images: "images/cruise-2015-caribbean/grand-cayman"
+      },
+      {
+        name: "Cozumel Cruise Port",
+        city: "Cozumel, Mexico",
+        lat: 20.5101,
+        lng: -86.9570,
+        date: "2015-04-30",
+        notes: "Day 4 – In port",
+        images: "images/cruise-2015-caribbean/cozumel"
+      }
+    ]
+  },
+  {
+    id: "cruise-2015-new-orleans",
+    name: "Gulf of Mexico 5-Night",
+    cruiseLine: "Carnival Cruise Line",
+    ship: "Carnival Elation",
+    departureDate: "2015-09-28",
+    returnDate: "2015-10-03",
+    color: "#6A1B9A",
+    companions: ["Army friends"],
+    seaDays: ["2015-09-29", "2015-10-01", "2015-10-02"],
+    ports: [
+      {
+        name: "Port of New Orleans",
+        city: "New Orleans, LA",
+        lat: 29.9443,
+        lng: -90.0615,
+        homePort: true,
+        date: "2015-09-28",
+        notes: "Departure – Day 1. Sailed with Army friends.",
+        images: "images/cruise-2015-new-orleans/new-orleans"
+      },
+      {
+        name: "Cozumel Cruise Port",
+        city: "Cozumel, Mexico",
+        lat: 20.5101,
+        lng: -86.9570,
+        date: "2015-09-30",
+        notes: "Day 3 – In port",
+        images: "images/cruise-2015-new-orleans/cozumel"
+      }
+    ]
+  },
+  {
+    id: "cruise-2021-eastern-carib",
+    name: "Eastern Caribbean 8-Night",
+    cruiseLine: "Carnival Cruise Line",
+    ship: "Carnival Magic",
+    departureDate: "2021-10-23",
+    returnDate: "2021-10-31",
+    color: "#00838F",
+    seaDays: ["2021-10-24", "2021-10-25", "2021-10-30"],
+    ports: [
+      {
+        name: "Port Canaveral",
+        city: "Cape Canaveral, FL",
+        lat: 28.4158,
+        lng: -80.5914,
+        homePort: true,
+        date: "2021-10-23",
+        notes: "Departure – Day 1",
+        images: "images/cruise-2021-eastern-carib/port-canaveral"
+      },
+      {
+        name: "Philipsburg Cruise Port",
+        city: "Sint Maarten",
+        lat: 18.0246,
+        lng: -63.0456,
+        date: "2021-10-26",
+        notes: "Day 4 – In port",
+        images: "images/cruise-2021-eastern-carib/st-maarten"
+      },
+      {
+        name: "Charlotte Amalie Harbor",
+        city: "St. Thomas, USVI",
+        lat: 18.3430,
+        lng: -64.9307,
+        date: "2021-10-27",
+        notes: "Day 5 – In port",
+        images: "images/cruise-2021-eastern-carib/st-thomas"
+      },
+      {
+        name: "Port of San Juan",
+        city: "San Juan, Puerto Rico",
+        lat: 18.4663,
+        lng: -66.1057,
+        date: "2021-10-28",
+        notes: "Day 6 – In port",
+        images: "images/cruise-2021-eastern-carib/san-juan"
+      },
+      {
+        name: "Amber Cove Cruise Port",
+        city: "Puerto Plata, Dominican Republic",
+        lat: 19.8968,
+        lng: -70.7384,
+        date: "2021-10-29",
+        notes: "Day 7 – In port",
+        images: "images/cruise-2021-eastern-carib/puerto-plata"
+      }
+    ]
+  },
+  {
+    id: "cruise-2024-bahamas",
+    name: "Bahamas 4-Night",
+    cruiseLine: "Carnival Cruise Line",
+    ship: "Carnival Elation",
+    departureDate: "2024-12-14",
+    returnDate: "2024-12-18",
+    color: "#F57F17",
+    seaDays: ["2024-12-15"],
+    ports: [
+      {
+        name: "JAXPORT (Jacksonville)",
+        city: "Jacksonville, FL",
+        lat: 30.3322,
+        lng: -81.6557,
+        homePort: true,
+        date: "2024-12-14",
+        notes: "Departure – Day 1",
+        images: "images/cruise-2024-bahamas/jacksonville"
+      },
+      {
+        name: "Nassau Cruise Port",
+        city: "Nassau, Bahamas",
+        lat: 25.0820,
+        lng: -77.3388,
+        date: "2024-12-16",
+        notes: "Day 3 – In port",
+        images: "images/cruise-2024-bahamas/nassau"
+      },
+      {
+        name: "Princess Cays",
+        city: "Eleuthera, Bahamas",
+        lat: 25.0500,
+        lng: -77.9667,
+        date: "2024-12-17",
+        notes: "Day 4 – Private island",
+        images: "images/cruise-2024-bahamas/eleuthera"
+      }
+    ]
+  },
+  {
     id: "cruise-2026-rhine",
     name: "Rhine River Cruise",
     cruiseLine: "Viking River Cruises",
