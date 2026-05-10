@@ -1,6 +1,8 @@
 const PHOTO_MANIFEST = {
   "images/cruise-2014-bahamas/freeport": [
     "DSC_0155.JPG",
+    "DSC_0156.JPG",
+    "DSC_0168.JPG",
     "DSC_0171.JPG"
   ],
   "images/cruise-2014-bahamas/jacksonville": [
@@ -10,6 +12,14 @@ const PHOTO_MANIFEST = {
     "DSC_0001.JPG",
     "DSC_0004.JPG",
     "DSC_0006.JPG"
+  ],
+  "images/cruise-2014-bahamas/misc": [
+    "DSC_0150.JPG",
+    "DSC_0152.JPG",
+    "DSC_0154.JPG",
+    "DSC_0157.JPG",
+    "DSC_0160.JPG",
+    "DSC_0166.JPG"
   ],
   "images/cruise-2014-bahamas/nassau": [
     "DSC_0007.JPG",
