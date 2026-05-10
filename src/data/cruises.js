@@ -903,6 +903,141 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2025-iberian-atlantic",
+    name: "Iberian & Atlantic Coast 14-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Star",
+    departureDate: "2025-04-18",
+    returnDate: "2025-05-07",
+    color: "#6A1B9A",
+    roundTrip: false,
+    seaDays: ["2025-04-28", "2025-05-04"],
+    ports: [
+      {
+        name: "Lisbon",
+        city: "Lisbon, Portugal",
+        lat: 38.7223,
+        lng: -9.1393,
+        type: "land",
+        date: "2025-04-19",
+        nights: 2,
+        notes: "Flew from Atlanta Apr 18, arrived Apr 19. Dinner in Lisbon. Tour of Fátima on Apr 20.",
+        images: "images/cruise-2025-iberian-atlantic/lisbon"
+      },
+      {
+        name: "Lisbon Cruise Terminal",
+        city: "Lisbon, Portugal",
+        lat: 38.7051,
+        lng: -9.1355,
+        homePort: true,
+        date: "2025-04-21",
+        notes: "Embarkation – Day 1.",
+        images: "images/cruise-2025-iberian-atlantic/lisbon"
+      },
+      {
+        name: "Port of Leixões (Porto)",
+        city: "Porto, Portugal",
+        lat: 41.1855,
+        lng: -8.7050,
+        date: "2025-04-22",
+        notes: "Day 2 – In port.",
+        images: "images/cruise-2025-iberian-atlantic/porto"
+      },
+      {
+        name: "Port of A Coruña",
+        city: "A Coruña, Spain",
+        lat: 43.3623,
+        lng: -8.4115,
+        date: "2025-04-23",
+        notes: "Day 3 – In port.",
+        images: "images/cruise-2025-iberian-atlantic/la-coruna"
+      },
+      {
+        name: "Port of Gijón",
+        city: "Gijón, Spain",
+        lat: 43.5453,
+        lng: -5.6627,
+        date: "2025-04-24",
+        notes: "Day 4 – In port.",
+        images: "images/cruise-2025-iberian-atlantic/gijon"
+      },
+      {
+        name: "Port of Bilbao",
+        city: "Bilbao, Spain",
+        lat: 43.3614,
+        lng: -3.0703,
+        date: "2025-04-25",
+        notes: "Day 5 – In port.",
+        images: "images/cruise-2025-iberian-atlantic/bilbao"
+      },
+      {
+        name: "Bordeaux / Soulac-sur-Mer",
+        city: "Bordeaux, France",
+        lat: 44.8378,
+        lng: -0.5792,
+        date: "2025-04-26",
+        notes: "Day 6 – Docked near Soulac-sur-Mer at mouth of Gironde; visited Bordeaux.",
+        images: "images/cruise-2025-iberian-atlantic/bordeaux"
+      },
+      {
+        name: "Port of La Rochelle",
+        city: "La Rochelle, France",
+        lat: 46.1591,
+        lng: -1.1520,
+        date: "2025-04-27",
+        notes: "Day 7 – In port with Vant and Nazig.",
+        images: "images/cruise-2025-iberian-atlantic/la-rochelle"
+      },
+      {
+        name: "Port of Le Havre",
+        city: "Le Havre, France",
+        lat: 49.4944,
+        lng: 0.1079,
+        date: "2025-04-29",
+        notes: "Day 9 – Tour bus to Paris.",
+        images: "images/cruise-2025-iberian-atlantic/le-havre"
+      },
+      {
+        name: "Port of Zeebrugge (Bruges)",
+        city: "Zeebrugge / Bruges, Belgium",
+        lat: 51.3533,
+        lng: 3.1800,
+        date: "2025-04-30",
+        notes: "Day 10 – In port. Visited Bruges.",
+        images: "images/cruise-2025-iberian-atlantic/bruges"
+      },
+      {
+        name: "Amsterdam Cruise Terminal",
+        city: "Amsterdam, Netherlands",
+        lat: 52.3826,
+        lng: 4.9166,
+        date: "2025-05-01",
+        notes: "Day 11 – In port.",
+        images: "images/cruise-2025-iberian-atlantic/amsterdam"
+      },
+      {
+        name: "Port of Hamburg",
+        city: "Hamburg, Germany",
+        lat: 53.5753,
+        lng: 9.9620,
+        date: "2025-05-02",
+        nights: 1,
+        notes: "Day 12 – Overnight in port (May 2–3).",
+        images: "images/cruise-2025-iberian-atlantic/hamburg"
+      },
+      {
+        name: "Port of Southampton",
+        city: "Southampton, England, UK",
+        lat: 50.8973,
+        lng: -1.4055,
+        type: "disembarkation",
+        date: "2025-05-05",
+        notes: "Day 15 – Disembarkation. Bus to airport hotel. Toured city May 6. Flew home May 7.",
+        images: "images/cruise-2025-iberian-atlantic/southampton"
+      }
+    ]
+  },
+  {
     id: "cruise-2024-asia",
     name: "Asia 11-Night",
     cruiseLine: "Norwegian Cruise Line",
@@ -1008,6 +1143,154 @@ const CRUISES = [
         date: "2024-01-27",
         notes: "Day 12 – Disembarkation. Bus city tour of Kuala Lumpur. Flew home.",
         images: "images/cruise-2024-asia/kuala-lumpur"
+      }
+    ]
+  },
+  {
+    id: "cruise-2025-norway-iceland",
+    name: "Norway & Iceland 14-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Star",
+    departureDate: "2025-09-12",
+    returnDate: "2025-09-28",
+    color: "#00838F",
+    roundTrip: false,
+    seaDays: ["2025-09-20", "2025-09-22", "2025-09-26"],
+    ports: [
+      {
+        name: "Oslo",
+        city: "Oslo, Norway",
+        lat: 59.9139,
+        lng: 10.7522,
+        type: "land",
+        date: "2025-09-12",
+        nights: 2,
+        notes: "Flew from Atlanta. 2 nights. Walked the city.",
+        images: "images/cruise-2025-norway-iceland/oslo"
+      },
+      {
+        name: "Oslo Cruise Terminal",
+        city: "Oslo, Norway",
+        lat: 59.9059,
+        lng: 10.7388,
+        homePort: true,
+        date: "2025-09-14",
+        notes: "Embarkation – Day 1.",
+        images: "images/cruise-2025-norway-iceland/oslo"
+      },
+      {
+        name: "Port of Kristiansand",
+        city: "Kristiansand, Norway",
+        lat: 58.1462,
+        lng: 7.9957,
+        date: "2025-09-15",
+        notes: "Day 2 – In port.",
+        images: "images/cruise-2025-norway-iceland/kristiansand"
+      },
+      {
+        name: "Port of Stavanger",
+        city: "Stavanger, Norway",
+        lat: 58.9700,
+        lng: 5.7331,
+        date: "2025-09-16",
+        notes: "Day 3 – In port.",
+        images: "images/cruise-2025-norway-iceland/stavanger"
+      },
+      {
+        name: "Port of Bergen",
+        city: "Bergen, Norway",
+        lat: 60.3913,
+        lng: 5.3221,
+        date: "2025-09-17",
+        notes: "Day 4 – In port.",
+        images: "images/cruise-2025-norway-iceland/bergen"
+      },
+      {
+        name: "Port of Kristiansund",
+        city: "Kristiansund, Norway",
+        lat: 63.1107,
+        lng: 7.7281,
+        date: "2025-09-18",
+        notes: "Day 5 – In port.",
+        images: "images/cruise-2025-norway-iceland/kristiansund"
+      },
+      {
+        name: "Port of Ålesund",
+        city: "Ålesund, Norway",
+        lat: 62.4722,
+        lng: 6.1549,
+        date: "2025-09-19",
+        notes: "Day 6 – In port.",
+        images: "images/cruise-2025-norway-iceland/alesund"
+      },
+      {
+        name: "Reykjavik Cruise Port",
+        city: "Reykjavik, Iceland",
+        lat: 64.1520,
+        lng: -21.9350,
+        date: "2025-09-21",
+        nights: 1,
+        notes: "Day 8 – Ship overnighted in port. Blue Lagoon visit!",
+        images: "images/cruise-2025-norway-iceland/reykjavik"
+      },
+      {
+        name: "Port of Ísafjörður",
+        city: "Ísafjörður, Iceland",
+        lat: 66.0759,
+        lng: -23.1356,
+        date: "2025-09-23",
+        notes: "Day 10 – In port.",
+        images: "images/cruise-2025-norway-iceland/isafjordur"
+      },
+      {
+        name: "Port of Akureyri",
+        city: "Akureyri, Iceland",
+        lat: 65.6835,
+        lng: -18.1002,
+        date: "2025-09-24",
+        notes: "Day 11 – In port.",
+        images: "images/cruise-2025-norway-iceland/akureyri"
+      },
+      {
+        name: "Djúpivogur",
+        city: "Djúpivogur, Iceland",
+        lat: 64.6560,
+        lng: -14.2831,
+        date: "2025-09-25",
+        notes: "Day 12 – In port. 🎂 Birthday!",
+        images: "images/cruise-2025-norway-iceland/djupivogur"
+      },
+      {
+        name: "Tórshavn",
+        city: "Tórshavn, Faroe Islands",
+        lat: 62.0107,
+        lng: -6.7714,
+        type: "missed",
+        excludeFromRoute: true,
+        date: "2025-09-26",
+        notes: "Day 13 – Missed due to weather (sea day).",
+        images: "images/cruise-2025-norway-iceland/torshavn"
+      },
+      {
+        name: "Lerwick",
+        city: "Lerwick, Shetland Islands, Scotland",
+        lat: 60.1547,
+        lng: -1.1492,
+        type: "missed",
+        excludeFromRoute: true,
+        date: "2025-09-26",
+        notes: "Day 13 – Missed due to weather (sea day).",
+        images: "images/cruise-2025-norway-iceland/lerwick"
+      },
+      {
+        name: "Port of Leith (Edinburgh)",
+        city: "Edinburgh, Scotland, UK",
+        lat: 55.9761,
+        lng: -3.1737,
+        type: "disembarkation",
+        date: "2025-09-27",
+        notes: "Day 14 – Edinburgh Castle tour. Disembarked Sep 28, flew straight home.",
+        images: "images/cruise-2025-norway-iceland/edinburgh"
       }
     ]
   },
