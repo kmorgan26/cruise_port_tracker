@@ -62,13 +62,13 @@ const PHOTO_MANIFEST = {
   "images/cruise-2015-bahamas/jacksonville": [
     "2015-01-22 18.43.51.jpg"
   ],
+  "images/cruise-2015-bahamas/misc": [
+    "20150123_223053.jpg"
+  ],
   "images/cruise-2015-bahamas/nassau": [
     "2015-01-25 11.12.31.jpg",
     "20150125_073117-PANO.jpg",
     "20150125_102025.jpg"
-  ],
-  "images/cruise-2015-bahamas/sea": [
-    "20150123_223053.jpg"
   ],
   "images/cruise-2015-caribbean/cozumel": [
     "20150430_102510.jpg",
