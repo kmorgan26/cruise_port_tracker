@@ -209,6 +209,9 @@
         })
         .join("");
 
+      var miscKey = "images/" + cruise.id + "/misc";
+      var miscPhotos = (typeof PHOTO_MANIFEST !== 'undefined' && PHOTO_MANIFEST[miscKey]) || [];
+
       card.innerHTML =
         '<div class="cruise-card-header" data-cruise-id="' + cruise.id + '">' +
         '<div class="cruise-color-swatch" style="background:' + cruise.color + '"></div>' +
@@ -222,7 +225,10 @@
         '<span class="toggle-track"></span>' +
         "</label>" +
         "</div>" +
-        '<div class="cruise-ports-list">' + portRows + "</div>";
+        '<div class="cruise-ports-list">' + portRows + "</div>" +
+        (miscPhotos.length > 0
+          ? '<div class="cruise-misc-photos"><button class="cruise-misc-btn" data-misc-key="' + miscKey + '">\uD83D\uDCF7 ' + miscPhotos.length + ' Cruise Photo' + (miscPhotos.length !== 1 ? 's' : '') + '</button></div>'
+          : '');
 
       list.appendChild(card);
     });
@@ -239,6 +245,20 @@
 
   document.getElementById("cruise-list").addEventListener("click", function (e) {
     // Port item → fly to port
+    // Misc cruise photos button → open GLightbox
+    var miscBtn = e.target.closest(".cruise-misc-btn");
+    if (miscBtn) {
+      var key = miscBtn.dataset.miscKey;
+      var files = (typeof PHOTO_MANIFEST !== 'undefined' && PHOTO_MANIFEST[key]) || [];
+      if (files.length) {
+        var elements = files.map(function(f) {
+          return { href: 'src/' + key + '/' + encodeURIComponent(f), type: 'image', title: f.replace(/\.[^.]+$/, '') };
+        });
+        GLightbox({ elements: elements, touchNavigation: true, loop: true, closeButton: true }).open();
+      }
+      return;
+    }
+
     var portItem = e.target.closest(".cruise-port-item");
     if (portItem) {
       var lat = parseFloat(portItem.dataset.lat);

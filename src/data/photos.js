@@ -39,4 +39,46 @@ const PHOTO_MANIFEST = {
   "images/cruise-2015-bahamas/sea": [
     "20150123_223053.jpg"
   ],
+  "images/cruise-2026-rhine/amsterdam": [
+    "096.jpg",
+    "097.jpg",
+    "098.jpg",
+    "099.jpg"
+  ],
+  "images/cruise-2026-rhine/basel": [
+    "072.jpg"
+  ],
+  "images/cruise-2026-rhine/cologne": [
+    "085.jpg",
+    "086.jpg",
+    "087.jpg",
+    "088.jpg",
+    "089.jpg",
+    "090.jpg"
+  ],
+  "images/cruise-2026-rhine/kinderdijk": [
+    "091.jpg",
+    "092.jpg",
+    "093.jpg",
+    "094.jpg",
+    "095.jpg"
+  ],
+  "images/cruise-2026-rhine/koblenz": [
+    "083.jpg",
+    "084.jpg"
+  ],
+  "images/cruise-2026-rhine/misc": [
+    "073.jpg",
+    "074.jpg",
+    "075.jpg",
+    "078.jpg",
+    "079.jpg",
+    "080.jpg",
+    "081.jpg",
+    "082.jpg"
+  ],
+  "images/cruise-2026-rhine/strasbourg": [
+    "076.jpg",
+    "077.jpg"
+  ],
 };
