@@ -1295,6 +1295,84 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2026-prima-western",
+    name: "Western Caribbean 7-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Prima",
+    departureDate: "2026-01-11",
+    returnDate: "2026-01-18",
+    color: "#5C6BC0",
+    seaDays: ["2026-01-13", "2026-01-17"],
+    ports: [
+      {
+        name: "Port Canaveral",
+        city: "Cape Canaveral, Florida",
+        lat: 28.4158,
+        lng: -80.5975,
+        homePort: false,
+        type: "land",
+        date: "2026-01-10",
+        notes: "Drove down from home. Pre-cruise overnight.",
+        images: "images/cruise-2026-prima-western/port-canaveral"
+      },
+      {
+        name: "Port Canaveral",
+        city: "Cape Canaveral, Florida",
+        lat: 28.4158,
+        lng: -80.5975,
+        homePort: true,
+        type: "port",
+        date: "2026-01-11",
+        notes: "Embarkation day.",
+        images: "images/cruise-2026-prima-western/port-canaveral"
+      },
+      {
+        name: "Great Stirrup Cay",
+        city: "Berry Islands, Bahamas",
+        lat: 25.8294,
+        lng: -77.8808,
+        homePort: false,
+        type: "port",
+        date: "2026-01-12",
+        notes: "NCL's private island in the Bahamas.",
+        images: "images/cruise-2026-prima-western/great-stirrup-cay"
+      },
+      {
+        name: "Montego Bay",
+        city: "Jamaica",
+        lat: 18.4762,
+        lng: -77.9165,
+        homePort: false,
+        type: "port",
+        date: "2026-01-14",
+        notes: "",
+        images: "images/cruise-2026-prima-western/montego-bay"
+      },
+      {
+        name: "George Town",
+        city: "Grand Cayman, Cayman Islands",
+        lat: 19.2866,
+        lng: -81.3744,
+        homePort: false,
+        type: "port",
+        date: "2026-01-15",
+        notes: "Toured around the island.",
+        images: "images/cruise-2026-prima-western/george-town"
+      },
+      {
+        name: "Cozumel",
+        city: "Quintana Roo, Mexico",
+        lat: 20.5073,
+        lng: -86.9557,
+        homePort: false,
+        type: "port",
+        date: "2026-01-16",
+        notes: "",
+        images: "images/cruise-2026-prima-western/cozumel"
+      }
+    ]
+  },
+  {
     id: "cruise-2026-rhine",
     name: "Rhine River Cruise",
     cruiseLine: "Viking River Cruises",
