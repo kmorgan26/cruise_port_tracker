@@ -160,6 +160,113 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2017-bahamas",
+    name: "Bahamas 4-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Sky",
+    departureDate: "2017-04-24",
+    returnDate: "2017-04-28",
+    color: "#1565C0",
+    seaDays: ["2017-04-25"],
+    ports: [
+      {
+        name: "PortMiami",
+        city: "Miami, FL",
+        lat: 25.7743,
+        lng: -80.1686,
+        homePort: true,
+        date: "2017-04-24",
+        notes: "Departure – Day 1",
+        images: "images/cruise-2017-bahamas/miami"
+      },
+      {
+        name: "Nassau Cruise Port",
+        city: "Nassau, Bahamas",
+        lat: 25.0820,
+        lng: -77.3388,
+        date: "2017-04-26",
+        notes: "Day 3 – Private taxi tour",
+        images: "images/cruise-2017-bahamas/nassau"
+      },
+      {
+        name: "Great Stirrup Cay",
+        city: "Berry Islands, Bahamas",
+        lat: 25.8333,
+        lng: -77.9167,
+        date: "2017-04-27",
+        notes: "Day 4 – Norwegian private island",
+        images: "images/cruise-2017-bahamas/great-stirrup-cay"
+      }
+    ]
+  },
+  {
+    id: "cruise-2017-south-carib",
+    name: "Southern Caribbean 11-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Sun",
+    departureDate: "2017-11-17",
+    returnDate: "2017-11-28",
+    color: "#AD1457",
+    seaDays: ["2017-11-18", "2017-11-19", "2017-11-22", "2017-11-25", "2017-11-26"],
+    ports: [
+      {
+        name: "PortMiami",
+        city: "Miami, FL",
+        lat: 25.7743,
+        lng: -80.1686,
+        homePort: true,
+        date: "2017-11-17",
+        notes: "Departure – Day 1",
+        images: "images/cruise-2017-south-carib/miami"
+      },
+      {
+        name: "Port of Oranjestad",
+        city: "Oranjestad, Aruba",
+        lat: 12.5186,
+        lng: -70.0358,
+        date: "2017-11-20",
+        notes: "Day 4 – In port",
+        images: "images/cruise-2017-south-carib/aruba"
+      },
+      {
+        name: "Port of Willemstad",
+        city: "Willemstad, Curaçao",
+        lat: 12.1084,
+        lng: -68.9335,
+        date: "2017-11-21",
+        notes: "Day 5 – In port",
+        images: "images/cruise-2017-south-carib/curacao"
+      },
+      {
+        name: "St. John's Cruise Port",
+        city: "St. John's, Antigua and Barbuda",
+        lat: 17.1274,
+        lng: -61.8468,
+        date: "2017-11-23",
+        notes: "Day 7 – In port",
+        images: "images/cruise-2017-south-carib/antigua"
+      },
+      {
+        name: "Port Zante",
+        city: "Basseterre, St. Kitts and Nevis",
+        lat: 17.2948,
+        lng: -62.7261,
+        date: "2017-11-24",
+        notes: "Day 8 – In port",
+        images: "images/cruise-2017-south-carib/st-kitts"
+      },
+      {
+        name: "Great Stirrup Cay",
+        city: "Berry Islands, Bahamas",
+        lat: 25.8333,
+        lng: -77.9167,
+        date: "2017-11-27",
+        notes: "Day 11 – Norwegian private island",
+        images: "images/cruise-2017-south-carib/great-stirrup-cay"
+      }
+    ]
+  },
+  {
     id: "cruise-2021-eastern-carib",
     name: "Eastern Caribbean 8-Night",
     cruiseLine: "Carnival Cruise Line",
@@ -214,6 +321,82 @@ const CRUISES = [
         date: "2021-10-29",
         notes: "Day 7 – In port",
         images: "images/cruise-2021-eastern-carib/puerto-plata"
+      }
+    ]
+  },
+  {
+    id: "cruise-2022-alaska",
+    name: "Alaska 9-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Spirit",
+    departureDate: "2022-07-18",
+    returnDate: "2022-07-27",
+    color: "#37474F",
+    seaDays: ["2022-07-19", "2022-07-23"],
+    ports: [
+      {
+        name: "Port of Seattle",
+        city: "Seattle, WA",
+        lat: 47.6011,
+        lng: -122.3368,
+        homePort: true,
+        date: "2022-07-18",
+        notes: "Departure – Day 1",
+        images: "images/cruise-2022-alaska/seattle"
+      },
+      {
+        name: "Port of Sitka",
+        city: "Sitka, AK",
+        lat: 57.0531,
+        lng: -135.3300,
+        date: "2022-07-20",
+        notes: "Day 3 – In port",
+        images: "images/cruise-2022-alaska/sitka"
+      },
+      {
+        name: "Icy Strait Point",
+        city: "Hoonah, AK",
+        lat: 58.1089,
+        lng: -135.4444,
+        date: "2022-07-21",
+        notes: "Day 4 – In port",
+        images: "images/cruise-2022-alaska/icy-strait-point"
+      },
+      {
+        name: "Port of Skagway",
+        city: "Skagway, AK",
+        lat: 59.4583,
+        lng: -135.3139,
+        date: "2022-07-22",
+        notes: "Day 5 – White Pass & Yukon Route train ride",
+        images: "images/cruise-2022-alaska/skagway"
+      },
+      {
+        name: "Port of Juneau",
+        city: "Juneau, AK",
+        lat: 58.3005,
+        lng: -134.4197,
+        date: "2022-07-24",
+        notes: "Day 7 – Mendenhall Glacier excursion (Dawes Glacier sea day on July 23 due to weather)",
+        images: "images/cruise-2022-alaska/juneau"
+      },
+      {
+        name: "Port of Ketchikan",
+        city: "Ketchikan, AK",
+        lat: 55.3422,
+        lng: -131.6461,
+        date: "2022-07-25",
+        notes: "Day 8 – In port",
+        images: "images/cruise-2022-alaska/ketchikan"
+      },
+      {
+        name: "Port of Victoria",
+        city: "Victoria, BC, Canada",
+        lat: 48.4284,
+        lng: -123.3656,
+        date: "2022-07-26",
+        notes: "Day 9 – Walked downtown",
+        images: "images/cruise-2022-alaska/victoria"
       }
     ]
   },
