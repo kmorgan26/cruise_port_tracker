@@ -1,0 +1,373 @@
+/* style.css */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --sidebar-width: 300px;
+  --bg-app: #0d1b2a;
+  --bg-sidebar: #111d2e;
+  --bg-card: #172134;
+  --bg-hover: #1c2b40;
+  --text-primary: #dde6f0;
+  --text-secondary: #7a90a4;
+  --border: #1e3048;
+  --radius: 8px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font);
+  font-size: 14px;
+  background: var(--bg-app);
+  color: var(--text-primary);
+}
+
+/* ─── Layout ─────────────────────────────────────────────── */
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+/* ─── Sidebar ────────────────────────────────────────────── */
+
+#sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  padding: 18px 16px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-logo {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.sidebar-header h1 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+.sidebar-header p {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+.sidebar-controls {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+#btn-fit-all {
+  width: 100%;
+  padding: 7px 12px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: var(--font);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+#btn-fit-all:hover {
+  color: var(--text-primary);
+  border-color: #2e4a6a;
+}
+
+#cruise-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 0 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+#cruise-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+#cruise-list::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.sidebar-footer {
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+/* ─── Cruise card ─────────────────────────────────────────── */
+
+.cruise-card {
+  margin: 4px 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.cruise-card.active {
+  border-color: var(--cruise-color, #2a4a6a);
+}
+
+.cruise-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.12s;
+}
+
+.cruise-card-header:hover {
+  background: var(--bg-hover);
+}
+
+.cruise-color-swatch {
+  width: 4px;
+  border-radius: 2px;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.cruise-card-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.cruise-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cruise-meta {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Toggle switch */
+.toggle {
+  position: relative;
+  width: 30px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.toggle-track {
+  position: absolute;
+  inset: 0;
+  background: var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toggle-track::before {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: white;
+  left: 2.5px;
+  top: 2.5px;
+  transition: transform 0.2s;
+}
+
+.toggle input:checked + .toggle-track {
+  background: var(--cruise-color, #1976d2);
+}
+
+.toggle input:checked + .toggle-track::before {
+  transform: translateX(14px);
+}
+
+/* Port list inside card */
+.cruise-ports-list {
+  border-top: 1px solid var(--border);
+  padding: 4px 0;
+}
+
+.cruise-port-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 12px 5px 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.cruise-port-item:hover {
+  background: var(--bg-hover);
+}
+
+.port-pip {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid;
+  flex-shrink: 0;
+}
+
+.port-pip.homeport {
+  width: 8px;
+  height: 8px;
+}
+
+.port-item-name {
+  font-size: 12px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.port-item-city {
+  font-size: 10px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── Map ─────────────────────────────────────────────────── */
+
+#map-container {
+  flex: 1;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─── Leaflet overrides ───────────────────────────────────── */
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 0;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+}
+
+.leaflet-popup-tip-container {
+  margin-top: -1px;
+}
+
+/* ─── Port popup ─────────────────────────────────────────── */
+
+.port-popup {
+  font-family: var(--font);
+  min-width: 190px;
+  padding: 12px 14px;
+}
+
+.port-popup-cruise-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: white;
+  background: var(--popup-color, #888);
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-bottom: 7px;
+}
+
+.port-popup-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.port-popup-city {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.port-popup-notes {
+  font-size: 11px;
+  color: #777;
+}
+
+.port-popup-homeport-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 5px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  :root {
+    --sidebar-width: 100vw;
+  }
+
+  #app {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    height: 40vh;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  #map-container {
+    flex: 1;
+  }
+}

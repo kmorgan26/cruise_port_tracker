@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two at Sea</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ── Sidebar ───────────────────────────────────────────── -->
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">⚓</div>
+        <div>
+          <h1>Two at Sea</h1>
+          <p>The world, one port at a time</p>
+        </div>
+      </div>
+
+      <div class="sidebar-controls">
+        <button id="btn-fit-all">Show All Cruises</button>
+      </div>
+
+      <div id="cruise-list">
+        <!-- Cruise cards injected by app.js -->
+      </div>
+
+      <div class="sidebar-footer">
+        <span id="port-count"></span>
+      </div>
+    </aside>
+
+    <!-- ── Map ───────────────────────────────────────────────── -->
+    <main id="map-container">
+      <div id="map"></div>
+    </main>
+
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- App data & logic (order matters) -->
+  <script src="data/cruises.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
