@@ -520,6 +520,132 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2023-mediterranean",
+    name: "Mediterranean 12-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Breakaway",
+    departureDate: "2023-08-21",
+    returnDate: "2023-09-03",
+    color: "#D84315",
+    roundTrip: false,
+    seaDays: ["2023-08-24"],
+    ports: [
+      {
+        name: "Rome",
+        city: "Rome, Italy",
+        lat: 41.9028,
+        lng: 12.4964,
+        type: "land",
+        date: "2023-08-21",
+        nights: 2,
+        hotel: "Airbnb",
+        notes: "Flew from Atlanta. 2 nights. Toured Vatican and walked the city on Aug 22.",
+        images: "images/cruise-2023-mediterranean/rome"
+      },
+      {
+        name: "Port of Civitavecchia",
+        city: "Civitavecchia, Italy",
+        lat: 42.0927,
+        lng: 11.7943,
+        homePort: true,
+        date: "2023-08-23",
+        notes: "Embarkation – taxi to Roma Termini, then train to port.",
+        images: "images/cruise-2023-mediterranean/civitavecchia"
+      },
+      {
+        name: "Santorini",
+        city: "Santorini, Greece",
+        lat: 36.3932,
+        lng: 25.4615,
+        date: "2023-08-25",
+        notes: "Day 5 – Tender port. Visited Oia & Fira. Walked stairs back down to tender.",
+        images: "images/cruise-2023-mediterranean/santorini"
+      },
+      {
+        name: "Port of Piraeus (Athens)",
+        city: "Athens, Greece",
+        lat: 37.9477,
+        lng: 23.6381,
+        date: "2023-08-26",
+        notes: "Day 6 – Acropolis & Parthenon tour. Took metro back to port.",
+        images: "images/cruise-2023-mediterranean/athens"
+      },
+      {
+        name: "Port of Mykonos",
+        city: "Mykonos, Greece",
+        lat: 37.4444,
+        lng: 25.3289,
+        date: "2023-08-27",
+        notes: "Day 7 – Explored on our own.",
+        images: "images/cruise-2023-mediterranean/mykonos"
+      },
+      {
+        name: "Port of Katakolon",
+        city: "Katakolon, Greece",
+        lat: 37.6408,
+        lng: 21.3235,
+        date: "2023-08-28",
+        notes: "Day 8 – Tour of Ancient Olympia, birthplace of the Olympics.",
+        images: "images/cruise-2023-mediterranean/katakolon"
+      },
+      {
+        name: "Valletta Cruise Port",
+        city: "Valletta, Malta",
+        lat: 35.8997,
+        lng: 14.5147,
+        date: "2023-08-29",
+        notes: "Day 9 – Self-guided walking tour.",
+        images: "images/cruise-2023-mediterranean/malta"
+      },
+      {
+        name: "Port of Catania",
+        city: "Catania, Sicily, Italy",
+        lat: 37.5079,
+        lng: 15.0830,
+        date: "2023-08-30",
+        notes: "Day 10 – Mount Etna tour.",
+        images: "images/cruise-2023-mediterranean/catania"
+      },
+      {
+        name: "Port of Naples",
+        city: "Naples, Italy",
+        lat: 40.8518,
+        lng: 14.2681,
+        date: "2023-08-31",
+        notes: "Day 11 – Tour of Sorrento then Pompeii.",
+        images: "images/cruise-2023-mediterranean/naples"
+      },
+      {
+        name: "Port of Livorno",
+        city: "Livorno, Italy",
+        lat: 43.5485,
+        lng: 10.3106,
+        date: "2023-09-01",
+        notes: "Day 12 – Tower of Pisa tour.",
+        images: "images/cruise-2023-mediterranean/livorno"
+      },
+      {
+        name: "Port of Cannes",
+        city: "Cannes, France",
+        lat: 43.5528,
+        lng: 7.0174,
+        date: "2023-09-02",
+        notes: "Day 13 – Walked the city. Found a great market.",
+        images: "images/cruise-2023-mediterranean/cannes"
+      },
+      {
+        name: "Port of Civitavecchia",
+        city: "Civitavecchia, Italy",
+        lat: 42.0928,
+        lng: 11.7944,
+        type: "disembarkation",
+        date: "2023-09-03",
+        notes: "Day 14 – Disembarkation. Bus to airport, flew back to Atlanta.",
+        images: "images/cruise-2023-mediterranean/civitavecchia"
+      }
+    ]
+  },
+  {
     id: "cruise-2024-bahamas",
     name: "Bahamas 4-Night",
     cruiseLine: "Carnival Cruise Line",
