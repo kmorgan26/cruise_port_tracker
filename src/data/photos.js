@@ -6,7 +6,10 @@ const PHOTO_MANIFEST = {
   "images/cruise-2014-bahamas/jacksonville": [
     "2014-01-16 19.50.30.jpg",
     "20140116_154117.jpg",
-    "DSC_0004.JPG"
+    "20140116_183844.jpg",
+    "DSC_0001.JPG",
+    "DSC_0004.JPG",
+    "DSC_0006.JPG"
   ],
   "images/cruise-2014-bahamas/nassau": [
     "DSC_0017.JPG",
