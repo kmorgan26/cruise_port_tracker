@@ -1395,15 +1395,15 @@ const CRUISES = [
         images: "images/cruise-2026-rhine/zurich"
       },
       {
-        name: "Mount Pilatus",
-        city: "Alpnachstad, Switzerland",
-        lat: 46.9789,
-        lng: 8.2526,
+        name: "Mount Titlis",
+        city: "Engelberg, Switzerland",
+        lat: 46.7733,
+        lng: 8.4264,
         type: "excursion",
         excludeFromRoute: true,
         date: "2026-04-24",
         notes: "Swiss Alps Tour",
-        images: "images/cruise-2026-rhine/mount-pilatus"
+        images: "images/cruise-2026-rhine/mount-titlis"
       },
       {
         name: "Saint-Louis",
