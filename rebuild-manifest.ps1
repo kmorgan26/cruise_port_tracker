@@ -1,3 +1,5 @@
+# Run with: PowerShell -ExecutionPolicy Bypass -File "d:\Projects\cruise_port_tracker\rebuild-manifest.ps1"
+
 $base = "d:\Projects\cruise_port_tracker\src\images"
 $output = @("const PHOTO_MANIFEST = {")
 
