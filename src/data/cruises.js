@@ -267,6 +267,41 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2018-jade-cancelled",
+    name: "Caribbean – Cancelled at Sea",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Jade",
+    departureDate: "2018-11-16",
+    returnDate: "2018-11-20",
+    color: "#78909C",
+    roundTrip: false,
+    notes: "Cruise cut short due to a mechanical issue in San Juan. Remained on the ship while repairs were attempted, then flew home to Miami on a chartered flight.",
+    ports: [
+      {
+        name: "Miami",
+        city: "Miami, Florida",
+        lat: 25.7742,
+        lng: -80.1851,
+        homePort: true,
+        type: "port",
+        date: "2018-11-16",
+        notes: "Embarkation day.",
+        images: "images/cruise-2018-jade-cancelled/miami"
+      },
+      {
+        name: "San Juan",
+        city: "Puerto Rico",
+        lat: 18.4655,
+        lng: -66.1057,
+        homePort: false,
+        type: "port",
+        date: "2018-11-18",
+        notes: "Ship developed a mechanical issue upon arrival. Cruise cancelled. Remained aboard while repairs were assessed, then flew home to Miami on a chartered flight.",
+        images: "images/cruise-2018-jade-cancelled/san-juan"
+      }
+    ]
+  },
+  {
     id: "cruise-2021-eastern-carib",
     name: "Eastern Caribbean 8-Night",
     cruiseLine: "Carnival Cruise Line",
