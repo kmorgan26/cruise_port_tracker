@@ -646,6 +646,223 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2024-nz-australia",
+    name: "New Zealand & Australia 13-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Star",
+    departureDate: "2024-03-14",
+    returnDate: "2024-03-28",
+    color: "#00695C",
+    roundTrip: false,
+    notes: "Back-to-back cruise #1. Continued on same ship/stateroom for Pacific cruise.",
+    seaDays: ["2024-03-22", "2024-03-23", "2024-03-24"],
+    ports: [
+      {
+        name: "Auckland",
+        city: "Auckland, New Zealand",
+        lat: -36.8485,
+        lng: 174.7633,
+        type: "land",
+        date: "2024-03-14",
+        nights: 2,
+        notes: "Flew from Atlanta. 2 nights before embarkation.",
+        images: "images/cruise-2024-nz-australia/auckland"
+      },
+      {
+        name: "Auckland Cruise Terminal",
+        city: "Auckland, New Zealand",
+        lat: -36.8441,
+        lng: 174.7711,
+        homePort: true,
+        date: "2024-03-16",
+        notes: "Embarkation – Day 1.",
+        images: "images/cruise-2024-nz-australia/auckland"
+      },
+      {
+        name: "Port of Tauranga",
+        city: "Tauranga, New Zealand",
+        lat: -37.6870,
+        lng: 176.1654,
+        date: "2024-03-17",
+        notes: "Day 2 – Hobbiton Movie Set & Kiwi plantation tour.",
+        images: "images/cruise-2024-nz-australia/tauranga"
+      },
+      {
+        name: "Port of Napier",
+        city: "Napier, New Zealand",
+        lat: -39.4928,
+        lng: 176.9120,
+        date: "2024-03-18",
+        notes: "Day 3 – In port.",
+        images: "images/cruise-2024-nz-australia/napier"
+      },
+      {
+        name: "Port of Wellington",
+        city: "Wellington, New Zealand",
+        lat: -41.2865,
+        lng: 174.7762,
+        date: "2024-03-19",
+        notes: "Day 4 – In port.",
+        images: "images/cruise-2024-nz-australia/wellington"
+      },
+      {
+        name: "Port of Lyttelton",
+        city: "Lyttelton (Christchurch), Canterbury, NZ",
+        lat: -43.6033,
+        lng: 172.7196,
+        date: "2024-03-20",
+        notes: "Day 5 – In port.",
+        images: "images/cruise-2024-nz-australia/lyttelton"
+      },
+      {
+        name: "Port Chalmers",
+        city: "Dunedin, New Zealand",
+        lat: -45.8157,
+        lng: 170.6281,
+        date: "2024-03-21",
+        notes: "Day 6 – In port. Insider's ship tour after returning.",
+        images: "images/cruise-2024-nz-australia/dunedin"
+      },
+      {
+        name: "Fiordland – Dusky, Doubtful & Milford Sounds",
+        city: "Fiordland, New Zealand",
+        lat: -44.6731,
+        lng: 167.8975,
+        type: "scenic",
+        excludeFromRoute: true,
+        date: "2024-03-22",
+        notes: "Day 7 – Scenic cruising through Dusky Sound, Doubtful Sound, and Milford Sound.",
+        images: "images/cruise-2024-nz-australia/fiordland"
+      },
+      {
+        name: "Port of Melbourne",
+        city: "Melbourne, Victoria, Australia",
+        lat: -37.8136,
+        lng: 144.9631,
+        date: "2024-03-25",
+        notes: "Day 10 – In port.",
+        images: "images/cruise-2024-nz-australia/melbourne"
+      },
+      {
+        name: "Port of Burnie",
+        city: "Burnie, Tasmania, Australia",
+        lat: -41.0572,
+        lng: 145.9066,
+        date: "2024-03-26",
+        notes: "Day 11 – In port.",
+        images: "images/cruise-2024-nz-australia/burnie"
+      },
+      {
+        name: "Port of Eden",
+        city: "Eden, New South Wales, Australia",
+        lat: -37.0656,
+        lng: 149.9055,
+        date: "2024-03-27",
+        notes: "Day 12 – In port.",
+        images: "images/cruise-2024-nz-australia/eden"
+      },
+      {
+        name: "Sydney Cruise Terminal",
+        city: "Sydney, New South Wales, Australia",
+        lat: -33.8593,
+        lng: 151.2101,
+        date: "2024-03-28",
+        notes: "Day 13 – City tour. Remained on ship for back-to-back Pacific cruise.",
+        images: "images/cruise-2024-nz-australia/sydney"
+      }
+    ]
+  },
+  {
+    id: "cruise-2024-pacific",
+    name: "Pacific Islands 13-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Star",
+    departureDate: "2024-03-28",
+    returnDate: "2024-04-10",
+    color: "#1565C0",
+    roundTrip: false,
+    notes: "Back-to-back cruise #2. Continued from NZ & Australia cruise, same ship/stateroom.",
+    seaDays: ["2024-03-29", "2024-03-30", "2024-04-02", "2024-04-05", "2024-04-07", "2024-04-09"],
+    ports: [
+      {
+        name: "Sydney Cruise Terminal",
+        city: "Sydney, New South Wales, Australia",
+        lat: -33.8593,
+        lng: 151.2101,
+        homePort: true,
+        date: "2024-03-28",
+        notes: "Departure – continued back-to-back from NZ & Australia cruise.",
+        images: "images/cruise-2024-nz-australia/sydney"
+      },
+      {
+        name: "Port of Nouméa",
+        city: "Nouméa, New Caledonia",
+        lat: -22.2763,
+        lng: 166.4572,
+        date: "2024-03-31",
+        notes: "Day 4 – In port.",
+        images: "images/cruise-2024-pacific/noumea"
+      },
+      {
+        name: "Mystery Island",
+        city: "Aneityum, Vanuatu",
+        lat: -20.2500,
+        lng: 169.7667,
+        date: "2024-04-01",
+        notes: "Day 5 – In port.",
+        images: "images/cruise-2024-pacific/mystery-island"
+      },
+      {
+        name: "Port of Lautoka",
+        city: "Lautoka, Fiji",
+        lat: -17.6134,
+        lng: 177.4500,
+        date: "2024-04-03",
+        notes: "Day 7 – In port. BULA!!",
+        images: "images/cruise-2024-pacific/lautoka"
+      },
+      {
+        name: "Dravuni Island",
+        city: "Dravuni, Fiji",
+        lat: -18.7565,
+        lng: 178.6523,
+        type: "missed",
+        excludeFromRoute: true,
+        date: "2024-04-04",
+        notes: "Day 8 – Cancelled due to high winds. Also crossed the International Date Line (Apr 4 → Apr 6).",
+        images: "images/cruise-2024-pacific/dravuni"
+      },
+      {
+        name: "Port of Pago Pago",
+        city: "Pago Pago, American Samoa",
+        lat: -14.2781,
+        lng: -170.7026,
+        date: "2024-04-06",
+        notes: "Day 10 – In port. (Crossed International Date Line – Apr 5 skipped.)",
+        images: "images/cruise-2024-pacific/pago-pago"
+      },
+      {
+        name: "Bora Bora",
+        city: "Bora Bora, French Polynesia",
+        lat: -16.5004,
+        lng: -151.7415,
+        date: "2024-04-08",
+        notes: "Day 12 – In port.",
+        images: "images/cruise-2024-pacific/bora-bora"
+      },
+      {
+        name: "Port of Papeete",
+        city: "Papeete, Tahiti, French Polynesia",
+        lat: -17.5516,
+        lng: -149.5585,
+        type: "disembarkation",
+        date: "2024-04-10",
+        notes: "Day 14 – Disembarkation. Flew back to Atlanta.",
+        images: "images/cruise-2024-pacific/papeete"
+      }
+    ]
+  },
+  {
     id: "cruise-2024-bahamas",
     name: "Bahamas 4-Night",
     cruiseLine: "Carnival Cruise Line",
