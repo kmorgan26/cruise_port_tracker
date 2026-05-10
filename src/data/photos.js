@@ -149,6 +149,13 @@ const PHOTO_MANIFEST = {
     "20170426_084715.jpg",
     "20170426_165254.jpg"
   ],
+  "images/cruise-2017-south-carib/miami": [
+    "20171117_110337.jpg",
+    "20171117_171746.jpg",
+    "20171117_174104.jpg",
+    "20171117_174533.jpg",
+    "20171117_174609.jpg"
+  ],
   "images/cruise-2018-jade-cancelled/miami": [
     "20181116_131545.jpg",
     "20181116_153231.jpg",
