@@ -3,6 +3,16 @@
 (function () {
   "use strict";
 
+  // ─── Splash screen ───────────────────────────────────────────────────────────
+
+  document.getElementById("btn-enter").addEventListener("click", function () {
+    var splash = document.getElementById("splash");
+    splash.classList.add("hidden");
+    splash.addEventListener("transitionend", function () {
+      splash.style.display = "none";
+    }, { once: true });
+  });
+
   // ─── Utilities ──────────────────────────────────────────────────────────────
 
   function formatDateRange(start, end) {
@@ -267,12 +277,19 @@
       return;
     }
 
-    // Card header → fit map to that cruise (ignore clicks on the toggle)
+    // Card header → toggle collapse (ignore clicks on the toggle)
     var header = e.target.closest(".cruise-card-header");
     if (header && !e.target.closest(".toggle")) {
       var id = header.dataset.cruiseId;
+      var card = document.getElementById("card-" + id);
       var layer = cruiseLayers[id];
-      if (layer && layer.visible) {
+      if (card.classList.contains("collapsed")) {
+        card.classList.remove("collapsed");
+      } else {
+        card.classList.add("collapsed");
+      }
+      // Only fly to bounds if not just collapsing
+      if (!card.classList.contains("collapsed") && layer && layer.visible) {
         map.flyToBounds(layer.bounds, { padding: [60, 60], duration: 1.2 });
       }
     }
@@ -294,6 +311,45 @@
       layer.visible = false;
       card.classList.remove("active");
     }
+  });
+
+  // Collapse / expand all cruise cards
+  document.getElementById("btn-collapse-all").addEventListener("click", function () {
+    var btn = this;
+    var collapsing = btn.dataset.state === "expanded";
+    document.querySelectorAll(".cruise-card").forEach(function (card) {
+      if (collapsing) {
+        card.classList.add("collapsed");
+      } else {
+        card.classList.remove("collapsed");
+      }
+    });
+    btn.dataset.state = collapsing ? "collapsed" : "expanded";
+    btn.textContent = collapsing ? "Expand All" : "Collapse All";
+  });
+
+  // Toggle all cruises on/off
+  document.getElementById("btn-toggle-all").addEventListener("click", function () {
+    var btn = this;
+    var turningOff = btn.dataset.state === "on";
+    Object.keys(cruiseLayers).forEach(function (id) {
+      var layer = cruiseLayers[id];
+      var checkbox = document.querySelector('input[type="checkbox"][data-cruise-id="' + id + '"]');
+      var card = document.getElementById("card-" + id);
+      if (turningOff) {
+        map.removeLayer(layer.layerGroup);
+        layer.visible = false;
+        card.classList.remove("active");
+        if (checkbox) checkbox.checked = false;
+      } else {
+        layer.layerGroup.addTo(map);
+        layer.visible = true;
+        card.classList.add("active");
+        if (checkbox) checkbox.checked = true;
+      }
+    });
+    btn.dataset.state = turningOff ? "off" : "on";
+    btn.textContent = turningOff ? "Show All" : "Hide All";
   });
 
   // Show all cruises button

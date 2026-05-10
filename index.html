@@ -17,6 +17,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
+
+  <!-- ── Splash screen ────────────────────────────────────────── -->
+  <div id="splash">
+    <div id="splash-card">
+      <div id="splash-logo">⚓</div>
+      <h1 id="splash-title">Two at Sea</h1>
+      <p id="splash-subtitle">The world, one port at a time</p>
+      <img id="splash-hero" src="src/images/hero.png" alt="Kevin and Heather on the Rhine River Cruise" />
+      <p id="splash-intro">
+        Follow along as we explore the world together — one port, one adventure at a time.
+        From Caribbean beaches to Norwegian fjords, Pacific islands to European rivers, South American glaciers to Asian harbors, 
+        we’ve been fortunate to experience so many incredible places and cultures through our shared love of cruising. This map is a visual diary of our travels, a way to relive the memories and share the stories behind each port we’ve visited. Whether you’re an avid cruiser or just love armchair travel,
+        this is our journey.
+      </p>
+      <button id="btn-enter">Explore the Map &rarr;</button>
+    </div>
+  </div>
+
   <div id="app">
 
     <!-- ── Sidebar ───────────────────────────────────────────── -->
@@ -31,6 +49,8 @@
 
       <div class="sidebar-controls">
         <button id="btn-fit-all">Show All Cruises</button>
+        <button id="btn-toggle-all" data-state="on">Hide All</button>
+        <button id="btn-collapse-all" data-state="expanded">Collapse All</button>
       </div>
 
       <div id="cruise-list">
