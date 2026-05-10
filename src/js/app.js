@@ -149,6 +149,7 @@
         (port.hotel ? '<div class="port-popup-notes">🏨 ' + port.hotel + "</div>" : "") +
         (port.notes ? '<div class="port-popup-notes">' + port.notes + "</div>" : "") +
         (isHomePort ? '<div class="port-popup-homeport-badge">⚓ Home Port</div>' : "") +
+        (port.type === "missed" ? '<div class="port-popup-missed-badge">❌ Missed – weather</div>' : "") +
         "</div>";
 
       var marker = L.marker([port.lat, port.lng], {
@@ -184,15 +185,17 @@
         .map(function (p) {
           var isHome = p.homePort === true;
           var portType = p.type || "port";
+          var isMissed = portType === "missed";
           var pipBg = isHome ? cruise.color : "transparent";
-          var pipBorder = (portType === "land" || portType === "excursion") ? "border-style:dashed;" : "";
+          var pipColor = isMissed ? "#888" : cruise.color;
+          var pipBorder = (portType === "land" || portType === "excursion" || isMissed) ? "border-style:dashed;" : "";
           return (
-            '<div class="cruise-port-item" data-lat="' + p.lat + '" data-lng="' + p.lng + '">' +
+            '<div class="cruise-port-item' + (isMissed ? " missed" : "") + '" data-lat="' + p.lat + '" data-lng="' + p.lng + '">' +
             '<div class="port-pip ' + (isHome ? "homeport" : "") + '" ' +
-            'style="border-color:' + cruise.color + ";background:" + pipBg + ";" + pipBorder + '">' +
+            'style="border-color:' + pipColor + ";background:" + pipBg + ";" + pipBorder + '">' +
             "</div>" +
             '<div>' +
-            '<div class="port-item-name">' + p.name + "</div>" +
+            '<div class="port-item-name' + (isMissed ? " port-item-missed" : "") + '">' + p.name + (isMissed ? " <span class=\"missed-badge\">missed</span>" : "") + "</div>" +
             '<div class="port-item-city">' + p.city + "</div>" +
             "</div>" +
             "</div>"

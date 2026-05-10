@@ -401,6 +401,125 @@ const CRUISES = [
     ]
   },
   {
+    id: "cruise-2023-south-america",
+    name: "South America 15-Night",
+    cruiseLine: "Norwegian Cruise Line",
+    ship: "Norwegian Star",
+    departureDate: "2023-01-01",
+    returnDate: "2023-01-15",
+    color: "#5D4037",
+    roundTrip: false,
+    seaDays: ["2023-01-02", "2023-01-05", "2023-01-06", "2023-01-09", "2023-01-12", "2023-01-13"],
+    ports: [
+      {
+        name: "Terminal de Pasajeros San Antonio",
+        city: "San Antonio, Chile",
+        lat: -33.5871,
+        lng: -71.6128,
+        homePort: true,
+        date: "2023-01-01",
+        notes: "Departure – Day 1. Boarded near Santiago.",
+        images: "images/cruise-2023-south-america/san-antonio"
+      },
+      {
+        name: "Puerto Montt",
+        city: "Puerto Montt, Chile",
+        lat: -41.4717,
+        lng: -72.9369,
+        date: "2023-01-03",
+        notes: "Day 3 – In port",
+        images: "images/cruise-2023-south-america/puerto-montt"
+      },
+      {
+        name: "Puerto Chacabuco",
+        city: "Puerto Chacabuco, Chile",
+        lat: -45.4636,
+        lng: -72.8044,
+        date: "2023-01-04",
+        notes: "Day 4 – Tour to Coyhaique, Chile",
+        images: "images/cruise-2023-south-america/puerto-chacabuco"
+      },
+      {
+        name: "Punta Arenas",
+        city: "Punta Arenas, Chile",
+        lat: -53.1638,
+        lng: -70.9171,
+        date: "2023-01-07",
+        notes: "Day 7 – Fort Bulnes excursion",
+        images: "images/cruise-2023-south-america/punta-arenas"
+      },
+      {
+        name: "Glacier Alley",
+        city: "Beagle Channel, Chile/Argentina",
+        lat: -54.8700,
+        lng: -69.5700,
+        type: "scenic",
+        date: "2023-01-08",
+        notes: "Day 8 – Scenic cruising through Glacier Alley. Glaciers: Alemania, Italia, Romanche.",
+        images: "images/cruise-2023-south-america/glacier-alley"
+      },
+      {
+        name: "Port of Ushuaia",
+        city: "Ushuaia, Argentina",
+        lat: -54.8019,
+        lng: -68.3029,
+        date: "2023-01-08",
+        notes: "Day 8 – Private island tour with Magellanic penguins (Isla Martillo)",
+        images: "images/cruise-2023-south-america/ushuaia"
+      },
+      {
+        name: "Cape Horn",
+        city: "Cape Horn, Chile",
+        lat: -55.9833,
+        lng: -67.2833,
+        type: "scenic",
+        excludeFromRoute: true,
+        date: "2023-01-09",
+        notes: "Day 9 – Sailed around Cape Horn (sea day)",
+        images: "images/cruise-2023-south-america/cape-horn"
+      },
+      {
+        name: "Stanley Harbour",
+        city: "Stanley, Falkland Islands",
+        lat: -51.6938,
+        lng: -57.8613,
+        date: "2023-01-10",
+        notes: "Day 10 – Walking tour",
+        images: "images/cruise-2023-south-america/falkland-islands"
+      },
+      {
+        name: "Puerto Madryn",
+        city: "Puerto Madryn, Argentina",
+        lat: -42.7692,
+        lng: -65.0385,
+        type: "missed",
+        excludeFromRoute: true,
+        date: "2023-01-11",
+        notes: "Day 11 – Missed due to weather (sea day)",
+        images: "images/cruise-2023-south-america/puerto-madryn"
+      },
+      {
+        name: "Port of Montevideo",
+        city: "Montevideo, Uruguay",
+        lat: -34.9011,
+        lng: -56.1645,
+        date: "2023-01-14",
+        notes: "Day 14 – 12-mile run through the city",
+        images: "images/cruise-2023-south-america/montevideo"
+      },
+      {
+        name: "Buenos Aires Cruise Terminal",
+        city: "Buenos Aires, Argentina",
+        lat: -34.6037,
+        lng: -58.3694,
+        type: "disembarkation",
+        date: "2023-01-15",
+        notes: "Day 15 – Gaucho Ranch Tour. Flew home from airport.",
+        images: "images/cruise-2023-south-america/buenos-aires"
+      }
+    ]
+  },
+  {
     id: "cruise-2024-bahamas",
     name: "Bahamas 4-Night",
     cruiseLine: "Carnival Cruise Line",
