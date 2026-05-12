@@ -1,6 +1,6 @@
 # Two at Sea — Cruise Port Tracker
 
-An interactive, browser-based world map that visualises every cruise itinerary as a colour-coded route with clickable port markers, photo galleries, and a collapsible sidebar.  No build step, no server, no framework — just plain HTML, CSS, and vanilla JavaScript served directly from the file system or any static web host.
+An interactive, browser-based world map that visualises every cruise itinerary as a color-coded route with clickable port markers, photo galleries, and a collapsible sidebar.  No build step, no server, no framework — just plain HTML, CSS, and vanilla JavaScript served directly from the file system or any static web host.
 
 ---
 
