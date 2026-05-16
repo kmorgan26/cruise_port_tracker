@@ -1232,6 +1232,17 @@ const CRUISES = [
         images: "images/cruise-2025-norway-iceland/stavanger"
       },
       {
+        name: "Månafossen Falls",
+        city: "Hjelmeland, Norway",
+        lat: 59.2867,
+        lng: 6.1644,
+        type: "excursion",
+        excludeFromRoute: true,
+        date: "2025-09-16",
+        notes: "Day 3 – Bus tour and hike from Stavanger.",
+        images: "images/cruise-2025-norway-iceland/monafossen-falls"
+      },
+      {
         name: "Port of Bergen",
         city: "Bergen, Norway",
         lat: 60.3913,
@@ -1269,6 +1280,17 @@ const CRUISES = [
         images: "images/cruise-2025-norway-iceland/reykjavik"
       },
       {
+        name: "Blue Lagoon",
+        city: "Grindavík, Iceland",
+        lat: 63.8799,
+        lng: -22.4487,
+        type: "excursion",
+        excludeFromRoute: true,
+        date: "2025-09-21",
+        notes: "Day 8 – Geothermal spa excursion from Reykjavik.",
+        images: "images/cruise-2025-norway-iceland/blue-lagoon"
+      },
+      {
         name: "Port of Ísafjörður",
         city: "Ísafjörður, Iceland",
         lat: 66.0759,
@@ -1276,6 +1298,17 @@ const CRUISES = [
         date: "2025-09-23",
         notes: "Day 10 – In port.",
         images: "images/cruise-2025-norway-iceland/isafjordur"
+      },
+      {
+        name: "Dynjandi Waterfall",
+        city: "Westfjords, Iceland",
+        lat: 65.7378,
+        lng: -23.1811,
+        type: "excursion",
+        excludeFromRoute: true,
+        date: "2025-09-23",
+        notes: "Day 10 – Bus tour from Ísafjörður.",
+        images: "images/cruise-2025-norway-iceland/dynjandi"
       },
       {
         name: "Port of Akureyri",
