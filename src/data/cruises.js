@@ -1430,6 +1430,17 @@ const CRUISES = [
         images: "images/cruise-2026-rhine/zurich"
       },
       {
+        name: "Lucerne",
+        city: "Lucerne, Switzerland",
+        lat: 47.0502,
+        lng: 8.3093,
+        type: "excursion",
+        excludeFromRoute: true,
+        date: "2026-04-24",
+        notes: "Stop on the way to Mount Titlis",
+        images: "images/cruise-2026-rhine/lucerne"
+      },
+      {
         name: "Mount Titlis",
         city: "Engelberg, Switzerland",
         lat: 46.7733,
