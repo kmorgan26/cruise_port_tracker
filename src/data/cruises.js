@@ -1109,6 +1109,16 @@ const CRUISES = [
         date: "2025-05-05",
         notes: "Day 15 – Disembarkation. Bus to airport hotel. Toured city May 6. Flew home May 7.",
         images: "images/cruise-2025-iberian-atlantic/southampton"
+      },
+      {
+        name: "London",
+        city: "London, England, UK",
+        lat: 51.5074,
+        lng: -0.1278,
+        type: "land",
+        date: "2025-05-05",
+        notes: "Post-cruise – Traveled to London from Southampton.",
+        images: "images/cruise-2025-iberian-atlantic/london"
       }
     ]
   },
