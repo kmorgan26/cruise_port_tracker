@@ -960,6 +960,36 @@ const CRUISES = [
         images: "images/cruise-2025-iberian-atlantic/lisbon"
       },
       {
+        name: "Fátima",
+        city: "Fátima, Portugal",
+        lat: 39.6333,
+        lng: -8.6667,
+        type: "land",
+        date: "2025-04-20",
+        notes: "Day trip from Lisbon – Shrine of Our Lady of Fátima.",
+        images: "images/cruise-2025-iberian-atlantic/fatima"
+      },
+      {
+        name: "Nazaré",
+        city: "Nazaré, Portugal",
+        lat: 39.6013,
+        lng: -9.0700,
+        type: "land",
+        date: "2025-04-20",
+        notes: "Day trip from Lisbon – coastal town known for giant waves.",
+        images: "images/cruise-2025-iberian-atlantic/nazare"
+      },
+      {
+        name: "Óbidos",
+        city: "Óbidos, Portugal",
+        lat: 39.3615,
+        lng: -9.1574,
+        type: "land",
+        date: "2025-04-20",
+        notes: "Day trip from Lisbon – medieval walled village.",
+        images: "images/cruise-2025-iberian-atlantic/obidos"
+      },
+      {
         name: "Lisbon Cruise Terminal",
         city: "Lisbon, Portugal",
         lat: 38.7051,
@@ -1031,6 +1061,16 @@ const CRUISES = [
         date: "2025-04-29",
         notes: "Day 9 – Tour bus to Paris.",
         images: "images/cruise-2025-iberian-atlantic/le-havre"
+      },
+      {
+        name: "Paris",
+        city: "Paris, France",
+        lat: 48.8566,
+        lng: 2.3522,
+        type: "land",
+        date: "2025-04-29",
+        notes: "Day 9 – Day trip by bus from Le Havre.",
+        images: "images/cruise-2025-iberian-atlantic/paris"
       },
       {
         name: "Port of Zeebrugge (Bruges)",
